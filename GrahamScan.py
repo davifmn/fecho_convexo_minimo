@@ -44,7 +44,7 @@ def graham_scan(pontos):
             
             if cross > 0:  
                 break
-            elif cross < 0:  # Curva à direita - remove ponto
+            elif cross < 0:  
                 fecho.pop()
             else:  # Pontos colineares  -> Mantém apenas o ponto mais distante
                 if distancia(anterior, p) > distancia(anterior, topo):
